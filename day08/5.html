@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        
+
+        /* 
+         绝对定位：
+         1、参照物是别人，但是参照物在设置的时候有一个规则：必须是祖先级元素
+         2、如果有多个参照物，浏览器按照就近原则，理他最近的一个就是参照物
+         3、如果都没有设置参照物，参照物就是body。
+         4、在设置参照物的时候，如果参照物已经是绝对定位或者是固定定位，就不用再写position: relative
+         5、绝对定位的元素不占位置，脱离普通文档流，层级也高于普通文档流
+         6、绝对定位 的元素中他的宽度用百分比来表示的时候，那么他的宽度就会继承参照物的宽度把他撑满   （指的是参照物的百分比）（如果参照物和父级不是一个）?
+         7、行内元素写宽高，本来不起作用，一旦设置了定位，写宽高也可以写作用
+            块级元素不写宽度，或自动撑满父级，一旦设置了定位，他的宽度就是由自身内容所决定的。
+        */
+        .main {
+            width: 500px;
+            height: 500px;
+            border: 1px solid blue;
+            margin: 0 auto;
+            position: relative;
+        }
+        .inner{
+            width: 200px;
+            height: 200px;
+            background: hotpink;
+            /* position: relative; */
+        }
+        .box{
+            width: 100%;
+            height: 100px;
+            background-color: lawngreen;
+            position: absolute;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="inner">
+            <div class="box"></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

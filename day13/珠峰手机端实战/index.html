@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="reset .css">
+    <script>
+        (function () {
+            function computed() {
+                // 获取屏幕的宽度
+                var win = document.documentElement.clientWidth || document.body.clientWidth;
+                // 设计稿的尺寸
+                var des = 640;
+                // 如果屏幕的宽度>=设计稿的尺寸，我们
+                if (win >= des) {
+                    document.documentElement.style.fontSize = "100px";
+                    return;
+                }
+                document.documentElement.style.fontSize = win / des * 100 + "px";
+            }
+            computed();
+            window.onresize = function () {
+                computed();
+            }
+
+        })();
+    </script>
+</head>
+
+<body>
+    <header>
+        <a href="" class="logo "></a>
+        <a href="" class="menu "></a>
+    </header>
+
+    <div class="banner">
+        <ul class="page">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div class="text">
+        <a href="" class="book"></a>
+        <p>全部课程</p>
+    </div>
+
+    <div class="banner2">
+        <div class="bananIn">
+
+        </div>
+        <h3>Vue.js理论精讲到项目实战课程</h3>
+        <p>￥ 5000.00元</p>
+    </div>
+    <div class="text">
+        <a href="" class="book"></a>
+        <p>全部课程</p>
+    </div>
+
+    <div class="banner2">
+        <div class="bananIn">
+
+        </div>
+        <h3>Vue.js理论精讲到项目实战课程</h3>
+        <p>￥ 5000.00元</p>
+    </div>
+    <div class="text">
+        <a href="" class="book"></a>
+        <p>全部课程</p>
+    </div>
+
+    <div class="banner2">
+        <div class="bananIn">
+
+        </div>
+        <h3>Vue.js理论精讲到项目实战课程</h3>
+        <p>￥ 5000.00元</p>
+    </div>
+    
+
+    <div class="bottom">
+        <ul>
+            <li class="one"><a href=""></a>
+                <p>首页</p>
+
+            </li>
+            <li class="two"><a href=""></a>
+                <p>我的课程</p>
+            </li>
+            <li class="three">
+                <a href=""></a>
+                <P>个人中心</P>
+            </li>
+
+        </ul>
+    </div>
+</body>
+
+</html>

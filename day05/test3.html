@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration:none;
+            color: deepskyblue;
+        }
+
+        ul,ol{
+            list-style: none;
+        }
+        input,button{
+            outline:none
+        }
+        .main{
+            width: 600px;
+            border: 1px solid lightblue;
+            margin:0 auto;
+            font-size: 16px;
+        }
+        .main input{
+            height: 44px;
+            width: 352px;
+            padding-left: 10px;
+        }
+        .item>span{
+            width: 100px;
+           
+           display: inline-block;
+           text-align: right;
+           margin-right: 20px;
+           
+        }
+        .main>.item{
+            margin-bottom: 10px;
+        }   
+        .main .code{
+            width: 170px;
+        }
+        .main .getcode{
+            width: 170px;
+            height: 46px;
+            border:none;
+            border:1px solid lightblue;
+            box-sizing: border-box;
+            margin-left: 10px;
+
+        }
+        .main .read{
+            width: 13px;
+            height: 13px;
+            vertical-align: middle;
+        }
+        .main .readitem{
+            font-size: 12px;
+            margin-left: 122px;
+        }
+        .main .registor{
+            width: 350px;
+            height: 50px;
+            margin-top: 10px;
+            margin-left: 122px;
+            background-color: deepskyblue;
+            border: none;
+        }
+
+         </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="item"><span>用户名</span> <input type="text" placeholder="请输入用户名"></div>
+
+        <div class="item"><span>手机号</span> <input type="text" placeholder="请输入手机号"></div>
+
+        <div class="item"><span>密码</span> <input type="password" placeholder="请设置密码"></div>
+
+        <div class="item">
+            <span>验证码</span> <input type="text" placeholder="请输入验证码" class="code"> <button class="getcode">获取验证码</button>
+        </div>
+        <div class="readitem">
+            <input type="checkbox" class="read"><span>阅读并接受<a href="">《百度用户协议》</a>及《百度隐私权保护声明》</span>
+        </div>
+
+        <button class="registor">注册</button>
+    </div>
+</body>
+
+</html>

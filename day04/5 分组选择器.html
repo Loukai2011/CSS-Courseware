@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 分组选择器
+           符号：,
+           作用：可以吧共用的代码提取出来
+           权重：不能相加 此时的权重是10
+         */
+        .box1,
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: gold;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"> div</div>
+    <p class="box2">p</p>
+</body>
+
+</html>

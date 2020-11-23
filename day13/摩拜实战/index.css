@@ -1,0 +1,228 @@
+.bannerBox {
+    height: 762px;
+    /* background-color: pink; */
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+#silde1,
+#silde2,
+#silde3 {
+    background: url("hero-bg-3.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+#silde2 {
+    background-image: url("hero-bg-6.jpg");
+}
+
+#silde3 {
+    background-image: url("hero-bg1-7.jpg");
+}
+
+.bannerBox {
+    position: relative;
+}
+
+.navBox {
+    width: 100%;
+    height: 56px;
+    /* background-color: tomato; */
+    position: absolute;
+    top: 13px;
+    left: 0;
+    z-index: 999;
+}
+
+.md {
+    height: 100%;
+    width: 1080px;
+    margin: 0px auto;
+    /* background-color: yellow; */
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.navIn .logo {
+    float: left;
+    margin: 10px 0;
+}
+
+.navIn .links {
+    line-height: 56px;
+    font-size: 16px;
+    float: right;
+    padding-left: 20px;
+}
+
+.navIn .links>a {
+    padding: 0 20px;
+    color: white;
+}
+
+.advBox {
+    width: 100%;
+    position: absolute;
+    /* background-color: coral; */
+    top: 40%;
+    z-index: 99;
+}
+
+.advBox h1 {
+    font-size: 68px;
+    color: #fff;
+    line-height: 1;
+}
+
+.advBox .btn {
+    display: block;
+    width: 295px;
+    height: 59px;
+    line-height: 59px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.4);
+
+}
+
+/* <!-- 图片列表 --> */
+.lists>li {
+    text-align: center;
+    width: 25%;
+    height: 260px;
+    float: left;
+    background: url("hero-bg-3.jpg") center center no-repeat;
+    background-size: cover;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    border-left-width: 1px;
+    border-right-width: 1px;
+
+}
+
+.lists>li:first-child {
+    border-left: none;
+}
+
+.lists>li:last-child {
+    border-right: none;
+}
+
+.lists>li>a>h3 {
+    font-size: 24px;
+    color: #fff;
+    margin-top: 37px;
+    font-weight: normal;
+}
+
+.lists>li>a {
+    width: 100%;
+    height: 260px;
+    display: block;
+}
+
+/* 
+范围：
+640-1080之间
+1导航消失
+.navIn .links
+display:none
+2、lists下的每个li宽度变成50%
+3.banner的高度是470px
+4 h1字体变成44px 
+
+范围0-640px
+宽度100%
+*/
+
+@media screen and (min-width:640px) and (max-width:1080px) {
+    .navBox .links {
+        display: none;
+    }
+
+    .md {
+        width: 100%;
+    }
+
+    .lists li {
+        width: 50%;
+    }
+
+    .advBoxIn>h1{
+        font-size: 44px;
+    }
+    .bannerBox{
+        height: 470px;
+    }
+
+}
+
+@media screen and (max-width:640px) {
+    .md {
+        width: 100%;
+    }
+
+    .navBox .links {
+        display: none;
+    }
+
+    .lists li {
+        width: 100%;
+    }
+
+    .advBoxIn>h1 {
+        font-size: 44px;
+    }
+    .bannerBox{
+        height: 470px;
+    }
+}
+.link{
+    width: 100%;
+    height: 140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link .linkbox{
+    height: 70px;
+    width: 1080px;
+
+    font-size: 16px;
+    display: flex;
+}
+.linkbox .bottom{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+
+.link .linkbox .icon{
+    width: 50px;
+    height: 50px;
+    background:url("weixin.png") center center no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+}
+.link .linkbox h3{
+    font-size: 16px;
+    font-weight: 200;
+}
+.linkbox .bottom:nth-child(2){
+    justify-content: center;
+}
+.linkbox .bottom:nth-child(3){
+    justify-content: flex-end;
+}
+
+
+

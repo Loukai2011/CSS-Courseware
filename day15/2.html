@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .class{
+            width: 80px;
+            height: 30px;
+            border: 1px solid yellow;
+            overflow: hidden;
+
+            /* 文本隐藏方式 */
+            text-overflow: ellipsis;
+
+            /* 不折行 */
+            /* white-space: nowrap; */
+            -webkit-box-orient: vertical;
+
+        }
+        .box {
+            width: 100px;
+            height: 80px;
+            border: 1px solid #333;
+            /* 溢出隐藏 */
+            overflow: hidden;
+            /* 文本隐藏的方式 */
+            text-overflow: ellipsis;
+            display:-webkit-box;
+            /* 控制让哪一行显示... */
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="class">
+        aaaaaaaaaaaaaaaaaa少时诵诗书所所所所所所所所
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main>li:nth-child(2) {
+            background-color: blue;
+        }
+
+        /* nth-child：
+        odd代表选中奇数行 */
+        .main>li:nth-child(odd) {
+            background-color: brown;
+        }
+
+        /* even代表选中偶数行 */
+        .main>li:nth-child(even) {
+            background-color: red;
+        }
+
+        /* 可以跟n的倍数 */
+        .main>li:nth-child(3n+1) {
+            color: purple;
+        }
+
+        /* 选中倒数第几个括号里就写几 */
+        .main>li:nth-last-child(1) {
+            background-color: black;
+        }
+        /* .main>li:first-child 选中第一个 */
+        /* .main>li:last-child  选中倒数第一个 */
+    </style>
+
+</head>
+
+<body>
+    <ul class="main">
+        <!-- 快捷生成八个li 数字从一到八 ul>li{$}*8 -->
+        
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+    </ul>
+</body>
+
+</html>

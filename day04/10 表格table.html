@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 500px;
+            height: 300px;
+            text-align: center;
+            margin: 0 auto;
+            
+            /* 单线边框 */
+            border-collapse: collapse;
+
+            /*  平均分布  */
+            table-layout: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <!--table标签：
+            caption：代表表格的标题 
+            table 代表是一个表格
+            tr 代表是行
+            td 代表是单元格
+            （如果把td换成th  代表着语义化 
+        属性：
+            border：边框
+            width：宽
+            height：高
+            cellspacing:单元格到单元格之间的距离
+            cellpadding:文字内容到单元格的内填充的距离
+            border-collapse: collapse; 单线边框
+            table-layout: fixed; 平均分布
+            td的属性：
+            合并列（跨列）： colspan=“数字”
+            合并行（跨行）： rowspan="数字" 
+     -->
+      
+    <table  border="1" >
+        <caption>成绩表</caption>
+        <tr>
+            <th colspan="2" rowspan="2">语文</th>
+            <th>数学</th>
+           
+        </tr>
+        <tr>
+            <!-- <td colspan="2">100</td> -->
+            
+            <td>100</td>
+        </tr>
+        <tr> 
+            <td >100</td>
+            <td>100</td>
+            <td rowspan="2">100</td>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td>100</td>
+           
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        在普通文档流中，块级元素如果不设置宽度，会撑满父元素，但是如果给此元素设置里浮动，不再成立，此盒子的宽度是由自身内容决定的
+     -->
+     <style>
+         .main{
+             width: 500px;
+             height: 500px;
+             background-color: yellow;
+             margin: 0 auto;
+         }
+         .box{
+             height: 100px;
+             background-color: violet;
+             /* float: left; */
+             /* 
+             两个盒子 大盒子里面有个小盒子，
+             大盒子设置了 宽高，小盒子只有高没有宽
+             那么小盒子会继承大盒子的高度
+             但是如果小盒子设置了浮动 上述的就不会成立，此时小盒子的宽度就是由自身内容e'zi所决定的
+              */
+         }
+     </style>
+</head>
+<body>
+    
+    <div class="main">
+<div class="box">111</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style:none;
+}
+button,input{
+  outline: none;
+}
+body{
+    /*为啥这里是14 页面上是12*/ font-size: 14px; 
+    color: black;
+}
+.clearfix:after{
+    content:"";
+    font-size:0;
+    display:block;
+    height:0;
+    visibility: hidden;
+    clear: both;
+    }
+    .clearfix{
+    *zoom:1;
+    }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        子选择器：
+        连接符：>
+        含义：选中子元素谁（第一层级的儿子元素）
+        权重：权重等于选择器组合之和
+         */
+    .main>span{
+        color: sandybrown;
+    }
+    .main>div{
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+    }
+    ul>li>ol{
+        color: yellow;
+    }
+    /* 
+      后代选择器：
+      符号：空格
+      含义：它特定的后代（不管是儿子还是孙子，曾孙子。。。。都是后代）元素选中
+      权重：选择器组合之和
+     */
+    .main div{
+        color: blue;
+    }
+    </style>  
+</head>
+<body>
+    <div class="main">
+        <div>
+            <span>span1</span>
+            <div>div</div>
+            <div>div</div>
+            <div>div</div>
+            
+
+        </div>  
+        <span>span2</span>
+
+    </div>
+    <ul>
+    <li> <ol>
+            <li>qqq </li>
+        </ol>
+    </li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>

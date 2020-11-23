@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+         继承性：
+         给某一个元素设置了一些样式，他的后代元素也能继承这些样式
+         以color/font-/text-/line- 开头的属性 元素可见性：visibility、以及普通文档流中的宽度是可继承的
+         */
+        body{
+            color:purple;
+            font-size: 32px;
+            text-align: center;
+            line-height: 32px;
+        }
+        ul{
+            line-height: 50px;
+        }
+        li{
+            background-color: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <h1>h1</h1>
+    <ul>
+        <li>珠峰培训</li>
+        <li>珠峰培训</li>
+    </ul>
+</body>
+</html>

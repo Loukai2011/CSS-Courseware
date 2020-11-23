@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 1000px;
+            height: 1000px;
+            border: 1px solid green;
+            background: url("head.gif") navajowhite;
+
+         
+            background-size: cover;
+            /* 
+              background-size：cover;图片保持比例放大或缩小使X轴与Y轴都铺满整个容器，但图片超出容器部分会被裁剪掉，图片不变形。
+              background-size：contain;图片保持比例放大或缩小填充容器，若不能完整填充容器，X轴或Y轴都有可能出现白边，图片不变形
+             */
+
+            background-size: contain;
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+        面试题：浮动产生的问题？
+        如果给某个盒子设置了浮动，他的父级没有写高度，会造成父级的塌陷。 
+        解决方法：
+        1、给父级设置一个高度
+        2、给父级设置一个overflow：hidden
+        3、谁浮动，找到浮动元素的父级，然后在父级盒子的末尾添加一个元素，并且给这个元素设置clear：both
+        4、谁浮动，就给谁的父亲加一个类名"clearfix"（经常会使用）
+        第三种办法和第四种方法的原理是相同的，第四种通过伪元素动态的添加了一个元素，并且清除了浮动。
+
+     -->
+     <style>
+         .main{
+             width: 100px;
+             background-color: yellow;
+            
+
+         }
+         .box{
+             height: 200px;
+             width: 50px;           
+             border: 1px solid red;           
+         }
+
+         .last{
+             /* 清除左浮动 */
+             clear: left;
+             /* 清除右浮动 */
+             clear:right;
+
+             /* 清除左右浮动 */
+             clear: both;
+
+         }
+     </style>
+</head>
+<body>
+     <div class="main">
+         <div class="box"></div>
+         <div class="last"></div>
+     </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .bigbox {
+            width: 100px;
+            height: 300px;
+            margin: 300px auto;
+            transform-origin: center top;
+            position: relative;
+            /* animation: run 1s linear infinite; */
+
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightcyan;
+            border-radius: 50%;
+            box-shadow: 
+            0 0 0 20px lightblue,
+            0 0 0 40px lightcoral,
+            0 0 0 60px yellow,
+            0 0 0 80px red;
+            /* 
+             第一个值代表X轴的偏移量
+             第二个值代表Y轴的偏移量
+             第三个值代表：模糊度
+             第四个值代表：阴影大小
+             第五个值代表：外阴影（默认） 外阴影inset
+            */
+            position: absolute;
+            bottom: 0px;
+            background:url("monkey.png") center center no-repeat;
+
+        }
+
+        @keyframes run{
+            0%{
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(45deg);
+            }
+            50%{
+                transform: rotate(90deg);
+            }
+            100%{
+                transform: rotate(180deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bigbox">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

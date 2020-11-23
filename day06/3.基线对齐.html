@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1,
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            display: inline-block;
+
+            /* 默认文字对齐方式
+               基线对齐
+             
+            vertical-align: baseline;
+
+            /* 顶部对齐 */
+            /* vertical-align: top; */
+
+            /* 中线对齐 */
+            /* vertical-align: middle; */
+
+            /* 底线对齐 */
+            /* vertical-align: bottom;  */
+        }
+
+        .box2 {
+            background-color: chocolate;
+        }
+
+        /* body {
+            font-size: 0;
+        } */
+
+        /* 
+        想让两个块级元素一行显示，转换成行内块之后，如果你的代码有换行，在页面中会出现缝隙，怎么消除？
+        1、消除代码中的换行符
+        2、给父级元素设置 font-size:0;
+        3、使用基线对齐
+        
+        基线对齐问题：
+        vertical-align: baseline; 默认基线对齐
+        vertical-align: top; 顶线对齐
+        vertical-align: middle; 中线对齐
+        vertical-align: bottom; 底线对齐
+
+         */
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2">box2</div>
+</body>
+
+</html>

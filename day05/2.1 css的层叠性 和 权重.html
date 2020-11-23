@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+         用不同的选择器对同一个元素 同一个属性设置了不同的值，
+         css处理这种冲突的能力 叫做层叠性
+         */
+       .box1{
+           color: red;
+       }
+       div{
+           color: pink;
+       }
+       div{
+           color: green !important;
+       }
+    </style>
+</head>
+<body>
+   <div class="box1" >div</div>
+</body>
+</html>

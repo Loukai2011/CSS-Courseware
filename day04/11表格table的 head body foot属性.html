@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 500px;
+            height: 300px;
+            text-align: center;
+            margin: 0 auto;
+           
+
+            /* 单线边框 */
+            border-collapse: collapse;
+
+            /*  平均分布  */
+            table-layout: fixed;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <!-- 
+            thead：表头
+            tbody:表格的身体
+            tfoot:表尾
+            加上上面的标签的作用：
+            代表特定的含义，在编辑区，即使把表格三部分顺序打乱，但是浏览器始终 会按照，它该有的顺序：thead--tbody--tfoot 显示
+         -->
+        <thead>
+            <th>语文</th>
+            <th>语文</th>
+            <th>语文</th>
+            
+        </thead>
+        <tbody>
+             <tr>
+                 <td>100</td>
+                 <td>100</td>
+                 <td>100</td>
+             </tr>
+             <tr>
+                 <td>100</td>
+                 <td>100</td>
+                 <td>100</td>
+             </tr>
+             <tr>
+                 <td>100</td>
+                 <td>100</td>
+                 <td>100</td>
+             </tr>
+             <tr>
+                 <td>100</td>
+                 <td>100</td>
+                 <td>100</td>
+             </tr>
+        </tbody>
+
+        <tfoot>
+            <td colspan="3">合计</td>
+            <!-- <td>合计</td>
+            <td>合计</td> -->
+        </tfoot>
+    </table>
+    
+    
+</body>
+
+</html>

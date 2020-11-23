@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 600px;
+            width: 600px;
+           
+            margin: 0 auto;
+            
+        }
+
+        .main .gan{
+            width: 10px;
+            height: 200px;
+            background-color:  crimson;
+            margin: 0 auto;
+            position: relative;
+            transform-origin: center  top;
+            animation: run1 3s linear  infinite ;
+        }
+
+        @keyframes run1{
+            0%{
+                transform: rotateZ(0);
+                
+            }
+            25%{
+                transform: rotateZ(45deg)
+            }
+            50%{
+                transform: rotateZ(0);
+            }
+            75%{
+                transform: rotateZ(-45deg);
+            }
+            100%{
+                transform: rotateZ(0)
+            }
+
+
+
+        }
+        .main .qiu{
+            height: 51px;
+    width: 50px;
+    background-color: hotpink;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -50px;
+    left: -20px;
+
+            
+        }
+      
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="gan">
+            <div class="qiu"></div>
+        </div>
+       
+    </div>
+</body>
+</html>

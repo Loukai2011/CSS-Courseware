@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 网页中的每一个元素都可以看成一个盒模型
+           盒模型主要包含的部分
+           content:主要内容区
+           padding：内填充
+           border：边框线
+           margin:盒子于盒子的距离
+           盒模型计算总盒子的大小
+           总盒子的高度=content的高度+padding的上下+border的上下
+           总盒子的宽度=content的宽度+padding的左右+border的左右
+         */
+         *{
+            margin: 0%;
+            padding: 0%;
+         }
+         .box{
+             background-color: greenyellow;
+             display: inline-block;
+             padding:40px;
+             border: 2px solid green;
+         }
+        .box.a{
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box a">
+         div
+    </div>
+    <div class="box">
+        div
+    </div>
+</body>
+</html>

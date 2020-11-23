@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 相邻选择器：
+        选中于某个元素相临的元素
+        注意：向下寻找，本例子中，找到的是20 行 和24 行
+          */
+          p+h1{
+                   background-color: hotpink;
+          }
+         
+    </style>
+</head>
+<body>
+     <p>p</p>
+     <h1>h1</h1>
+     <h1>h1</h1>
+     <h1>h1</h1>
+     <p>p</p>
+     <h1>h1</h1>
+     <h1>h1</h1>
+     <h1>h1</h1>
+    
+</body>
+</html>

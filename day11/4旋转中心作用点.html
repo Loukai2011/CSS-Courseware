@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+                 width: 100px;
+                 height: 100px;
+                 background-color: pink;
+                 margin: 100px auto;
+                 transition: all 2s linear;
+                transform-origin: right  bottom;
+                
+                /* 改变旋转中心作用点
+                  第一个值代表水平方向
+                  第二个值代表垂直方向
+                  
+                */
+        }
+
+        .box:hover{
+            transform: rotate(360deg);
+          
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

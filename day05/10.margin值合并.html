@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* margin值合并：有两个兄弟元素：.box1 .box2 ,给.box1设置一个向下的距离，
+         给.box2设置一个向上的距离，两个盒子之间的距离并不是他们之和，而是取最大的距离 */
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .box1,.box2{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+        .box1{
+            margin-bottom: 50px;
+        }
+        .box2{
+            background-color:green;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">div</div>
+    <div class="box2">div</div>
+</body>
+</html>

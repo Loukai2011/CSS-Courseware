@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+
+        a{
+            text-decoration: none;
+        }
+       .main{
+              width: 600px;
+              margin:0 auto;
+              background-color: yellow;
+              font-size: 14px;
+       }
+       .main .item input{
+           width: 140px;
+           height: 30px;
+           padding-left: 10px;
+           margin: 0 auto;
+       }
+       .main .item span{
+           width: 50px;
+           height: 40px;
+           display: inline-block;
+           text-align: right;
+           line-height: 40px;
+           margin-right: 20px;
+       }
+       .main .item .code{
+           width: 92px;
+       }
+       .getcode{
+           width: 40px;
+           height: 30px;
+           line-height: 30px;
+           background-color:tomato;
+           display: inline-block;
+           text-align: center;
+          
+       }
+       .read{
+          text-indent: 74px;
+          margin-top: 20px;
+       }
+      .read input{
+          width: 14px;
+          height: 14px;
+      }
+      button{
+          width: 140px;
+          height: 30px;
+          display: inline-block;
+          background-color: blue;
+          margin-left: 73px;
+          margin-top: 20px;
+          cursor: pointer;
+      }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <div class="item">
+            <span>用户名</span> <input type="text" placeholder="请输入用户名">
+        </div>
+
+        <div class="item">
+            <span>手机号</span> <input type="text" placeholder="用于登录和找回密码">
+        </div>
+        <div class="item">
+            <span>密码</span> <input type="password" placeholder="请设置登录密码">
+        </div>
+
+        <div class="item">
+        <span>验证码</span> <input type="text" placeholder="请输入验证码" class="code" > 
+        <a href="" class="getcode">获取</a>
+        </div>
+        <div class="read">
+                 <input type="checkbox" ><span >阅读并接受<a href="">《百度用户协议》</a>及<a href="">《百度隐私权保护声明》</a></span>
+                 
+        </div>
+        <button>登录</button>
+
+    </div>
+</body>
+</html>

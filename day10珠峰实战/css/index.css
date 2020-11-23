@@ -1,0 +1,373 @@
+.whiteArea{
+    /* height: 500px; */
+    padding-bottom: 28px;
+    background-color: white;
+}
+.md{
+    width: 1200px;
+    margin: 0 auto;
+}
+.whiteAreaIn{
+    height: 100%;   
+}
+.NavBox{
+    height: 84px;
+   
+}
+.logo{
+    width: 176px;
+    height: 52px;
+    background: url("../image/logo.png") center center no-repeat;
+    overflow: hidden;
+    float: left;
+    margin-top: 16px;
+}
+.logo>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.NavIn{   
+    
+    float: left;
+    margin-top: 38px;
+}
+.NavIn>a{
+    font-size: 14px;
+    color: #2a2a2a;
+    float: left;
+    margin-left: 45px;
+
+}
+.Message{
+    
+    float: right;
+}
+.Message>a{
+    float: left;
+    font-size: 14px;
+    color: #2a2a2a;
+}
+.Message>.cartBox{
+    width: 75px;
+    height: 25px;
+    line-height: 25px;
+    background: url("../image/cart.png") left center no-repeat;
+    text-indent: 28px;
+    margin-top: 33px;   
+}
+.Message .logIn,.Message .regestor{
+    margin-top: 35px; 
+}
+.Message .logIn{
+    margin: 35px 37px 0 39px ;
+}
+.banaerBox{
+    height: 361px;
+    background-color: pink;
+    position: relative;
+}
+.bannerIn a{
+  display: block;
+  height: 361px;
+  background: url("../image/banner1.png") center center no-repeat;
+}
+.slideBar{
+    width: 240px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background:rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+}
+.slideBar li{
+    padding:0 25px ;
+}
+.slideBar a{
+    color: white;
+    height: 72px;
+    line-height: 72px;
+    display: block;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+}
+.slideBar a>span{
+    float: left;
+}
+.slideBar a>img{
+    float: right;
+    margin-top: 30px;
+}
+.slideBar li:last-child>a{
+    border:none
+}
+.slideBar li:hover{
+    background: rgba(0,0,0,0.3);
+
+}
+.slideBar .content{
+    width: 500px;
+    height: 100%;
+    position: absolute;
+    left: 240px;
+    top: 0%;
+    background-color: pink;
+    display: none;}
+
+.slideBar li:hover .content{
+    display: block;
+}
+
+/* 热门推荐 */
+.recommentBox{
+    color: #2d2d2d;
+    font-size: 16px;
+}
+.recommentBox h3{
+    margin: 39px 0 19px 0;
+}
+
+.lists li a{
+    width: 251px;
+    height: 182px;
+  
+    display: block;
+}
+.lists li{
+    float: left;
+    margin-right: 65px;
+    background:#fff url("../image/libg1.png") center top no-repeat;
+    position: relative;
+    box-shadow: 0px 2px 5px 3px rgba(2, 2, 2, 0.2);
+    /* 第一个值：X轴偏移
+       第二个值：y轴偏移
+       第三个值：阴影模糊度
+       第四个值：阴影的大小
+    */
+}
+.lists li:last-child{
+    margin-right: 0px;
+}
+.lists .bottomBox{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* background-color: red;    */
+    width: 100%;
+    padding:15px 15px 0 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.bottomBox .top{
+    
+    padding-bottom: 17px;
+    height: 30px;
+    overflow: hidden;
+    transition: height 0.5s linear;
+    /* 第一个值是变化的属性
+       第二个值代表的是动画执行时间
+       第三个值运动的曲线
+       linear代表这匀速运动
+     */
+}
+.bottomBox .top:hover{
+    height: 82px;
+}
+
+.bottomBox .top h5{
+    font-size: 14px;   
+}
+.bottomBox .top h5:nth-child(2){
+    margin: 6px 0;;
+}
+.bottomBox .top p{
+    font-size: 12px;
+    color: #9e9d9d;
+}
+.bottomBox .info{
+    height: 43px;
+    line-height: 43px;
+    font-size: 12px;
+}
+.bottomBox .info .price{
+    float: left;
+    color: #C71B1B;
+}
+.bottomBox .info .number{
+    float: right;
+    color: #868484;
+}
+
+/* 灰色区域 */
+.grayArea{
+    background-color: #f3f5f7;
+   
+    padding: 34px 0 54px 0;
+}
+
+.grayAreaIn>div{
+    float: left;
+}
+.grayAreaIn>.left{
+    width: 224px;
+    height: 380px;
+    float: left;
+    /* ???? */
+    background: url("../image/bg3.png") center center no-repeat;
+
+}
+
+.grayAreaIn .center1{
+    width: 397px;
+    height: 380px;
+    /* background-color: pink; */
+    margin: 0 25px;
+}
+
+.grayAreaIn .center1>a{
+    height: 185px;
+    display: block;
+}
+
+.grayAreaIn .center1>a:first-child{
+  background: url("../image/bg1.png") center center no-repeat;
+}
+.grayAreaIn .center1>a:last-child{
+    background: url("../image/bg2.png") ;
+    margin-top:10px;
+    
+}
+
+.grayAreaIn .center2{
+    float: left;
+    width: 251px;
+    height: 380px;
+}
+.grayAreaIn .lists .last{
+    margin-top: 15px;
+
+}
+.grayAreaIn .right{
+    width: 257px;
+    height: 380px;
+    /* background-color: salmon; */
+    float: left;
+    margin-left: 21px;
+    box-shadow: 0px 2px 5px 3px rgba(2, 2, 2,0.2 );
+}
+.grayAreaIn .right>.right1>li{
+
+    background: url("../image/libg2.png") center center no-repeat;
+    background-size: cover;
+    box-shadow:none;
+}
+
+.grayAreaIn .right .last{
+    height: 200px;
+    width:  257px;
+    background-color: white;
+  padding-top: 15px;
+  box-sizing: border-box;
+   
+    
+   
+    
+   
+}
+.grayAreaIn .right .last>li{
+   
+    height: 35px;
+    line-height: 35px;
+    padding-left: 20px ;
+    font-size: 14px;
+    
+}
+.grayAreaIn .right .last>li>a{
+    color: black;
+}
+
+.blackAreaIn{
+    
+   
+    background-color: #4b4a4a;
+   
+}
+.blackAreaIn .content{
+    height: 242px;
+    /* background-color: chartreuse; */
+    position: relative;
+   
+}
+.blackAreaIn .content .one{
+    width: 130px;  
+    padding-top: 50px;
+    font-size: 14px;
+    color: #a3a3a3;
+ 
+    box-sizing: border-box;
+    float: left;
+    margin-left: 90px;
+   
+}
+.blackAreaIn .content .one li{
+    height: 30px;
+    line-height: 30px;
+}
+.blackAreaIn .content .one li:first-child{
+  font-size: 16px;
+  color: #fff;
+  height: 30px;
+  line-height: 30px;
+}
+.blackAreaIn .tuBiao {
+    width: 234px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
+}
+.blackAreaIn .tuBiao>li{
+    float: right;
+}
+
+.blackAreaIn>.dibu{
+    height: 80px;
+    background-color: black;
+    padding: 25px 0;
+    box-sizing: border-box;
+}
+.dibu p{
+    text-align: center;
+    font-size: 14px;
+    color: #A3A3A3;
+}
+
+.guding{
+    height: 244px;
+    width: 65px;
+    background-color: #FFFEFE;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    margin-top: -33px;
+    /* border: 1px solid #BCBCBC;; */
+    box-sizing: border-box;
+}
+.guding a{
+    display: block;
+    height: 61px;
+    width: 65px;
+    border-bottom: 1px solid #BCBCBC;;
+    text-align: center;
+    font-size: 24px;
+    color: #BCBCBC;
+    box-sizing: border-box;
+    padding: 17px;
+   
+}
+.guding a:last-child{
+    /* border-bottom:none; */
+}

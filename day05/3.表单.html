@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        textarea,input{
+            outline: none;
+            /* 去除点击时候出现的蓝线 */
+        }
+        textarea{
+            /* 禁止重置尺寸 */
+            resize: none;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        input常用的属性：
+        placeholder:提示文本（占位符）
+        autofocus：自动获取焦点
+        checked：默认选中
+        disabled:禁止选中
+        required:必填项，不写的话会有提示
+     -->
+    <form action="" method="GET">
+        <!-- 文本输入框 -->
+        <input type="text" name="username" placeholder="请输入用户名" autofocus required>  
+
+        <!-- 密码输入框 -->
+        <input type="password" name="password" placeholder="请输入密码">
+
+        <!-- 重置 按钮-->
+        <input type="reset">
+
+        <!--提交按钮  -->
+        <input type="submit">
+
+        <!-- 按钮 -->
+        <input type="button" value="显示文字的内容">
+        <button>按钮</button>
+
+        <!-- 单选按钮 -->
+        <input type="radio" >
+
+        <!-- 多选按钮 -->
+        <input type="checkbox" disabled>
+        <!-- 文本域 -->
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <!-- 下拉框
+              selected:默认被选中
+              disabled:禁止被选中
+        -->
+        <select name="" id="">
+            <option value="" disabled>请选择你的地区</option>
+            <option value=""> 北京</option>
+            <option value="">河南</option>
+        </select>
+    </form>
+</body>
+
+</html>

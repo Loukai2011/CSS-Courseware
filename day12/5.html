@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            /* 从下往上  从上往下是默认*/
+            /* background: -webkit-linear-gradient(bottom,yellow,green); */
+            /* 从左上角到右下角 */
+            /* background: -webkit-linear-gradient(left top,yellow,green); */
+            /* 角度转变 */
+            /* background: -webkit-linear-gradient(20deg,yellow,green); */
+
+            /* 比例渐变 */
+            background: -webkit-linear-gradient(left top,
+                    yellowgreen 0%,
+                    yellowgreen 25%,
+                    yellow 25%,
+                    yellow 50%,
+                    yellowgreen 50%,
+                    yellowgreen 75%,
+                    yellow 75%,
+                    yellow 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

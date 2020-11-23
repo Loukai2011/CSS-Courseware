@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 盒模型可以分为两种：
+         +标准盒模型（默认的）：box-sizing: content-box
+         +ie盒模型：box-sizing: border-box
+        
+         在标准盒模型下：代码中所写的width 和高度是盒模型中content部分的宽和高
+         在ie盒模型下：代码中上所写的width 和高度是总盒子的高度，如果你用到了 padding border ，浏览器会自动的减去，计算出来content部分
+         */
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            padding :20px;
+            text-align: center;
+            /* 转换成ie盒模型 */
+            box-sizing: border-box;
+
+            /* 标准盒模型 */
+            /* box-sizing: content-box; */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">div</div>
+</body>
+</html>
